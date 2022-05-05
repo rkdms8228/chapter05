@@ -41,6 +41,7 @@ public class InfoListAdd {
 			
 		}
 		
+		//내 정보 추가
 		iArray.add(new Info("김가은", "010-8563-8228", "055-111-1111"));
 			
 			for(Info i : iArray) {
@@ -50,6 +51,7 @@ public class InfoListAdd {
 				System.out.println("회사: "+i.getCompany());
 				System.out.println();
 				
+				//추가한 정보 데이터에 추가
 				String str = i.getName()+","+i.getHp()+","+i.getCompany();
 				bw.write(str);
 				bw.newLine();

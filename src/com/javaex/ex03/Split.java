@@ -23,7 +23,8 @@ public class Split {
 		BufferedWriter bw = new BufferedWriter(osw);
 		
 		while(true) {
-				
+			
+			//자르기
 			String str = br.readLine();
 			str.split(",");
 			

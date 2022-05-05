@@ -24,6 +24,7 @@ public class InfoList {
 		OutputStreamWriter osw = new OutputStreamWriter(out);
 		BufferedWriter bw = new BufferedWriter(osw);
 		
+		//리스트 생성
 		List<Info> iArray = new ArrayList<Info>();
 		
 		while(true) {
@@ -34,15 +35,18 @@ public class InfoList {
 				break;
 			}else {
 				
+				//배열 관리
 				String[] info = str.split(",");
 				iArray.add(new Info(info[0], info[1], info[2]));
 				
 			}
 			
+			//해당 부분까지 write로 입력해야 출력 겹치지 않음
 			bw.write(str);
 			bw.newLine();
 		}
 			
+		//전체 출력
 			for(Info i : iArray) {
 				
 				System.out.println("이름: "+i.getName());
