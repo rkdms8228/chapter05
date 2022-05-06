@@ -52,8 +52,8 @@ public class InfoListAdd {
 				System.out.println();
 				
 				//추가한 정보 데이터에 추가
-				String str = i.getName()+","+i.getHp()+","+i.getCompany();
-				bw.write(str);
+				String save = i.getName()+","+i.getHp()+","+i.getCompany();
+				bw.write(save);
 				bw.newLine();
 				
 			}

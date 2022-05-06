@@ -38,6 +38,19 @@ public class InfoList {
 				//배열 관리
 				String[] info = str.split(",");
 				iArray.add(new Info(info[0], info[1], info[2]));
+				/*
+				String name = info[0];
+				String hp = info[1];
+				String company = info[2];
+				
+				Info info = new Info(info[0], info[1], info[2]);
+				//강사님이 가르쳐 주시는 방법 중 첫단계(리스트 넣기 전)
+				
+				iArray.add(info);
+				
+				//임시 출력 확인
+				System.out.println(iArray.toString());
+				*/
 				
 			}
 			
